@@ -1,0 +1,215 @@
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #ffe21c);
+}
+:root {
+  font-family:  "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #fff;
+  background-color: #37474f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+ 
+
+.container {
+  margin: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #24c8db);
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ 
+.box { 
+  padding-top: 10px; 
+  height: 75px;
+  border-radius: 5px;
+  border: solid 1px #000;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+} 
+
+.icon {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.detail {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+}
+
+
+.box .timer { 
+  padding: 3px;
+  font-size: 1.2rem;
+}
+
+.box .label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 50%;
+  text-align: left;
+}
+.box .text { 
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.bg-success {
+  background-color: #4caf50;
+}
+.bg-danger {
+  background-color: #f44336;
+}
+.bg-warning {
+  background-color: #ff9800;
+}
+.bg-dark {
+  background-color: #263238;
+}
+
+.add {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #000;
+  position: absolute;
+  bottom: 10px; 
+  left: 145px;
+  font-size: 16px;
+}
+
+
+.popup {  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  bottom: 10px; 
+  left: 145px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -85px;
+  padding: 10px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+input {
+  border: solid 1px #000;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.save {
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+
+.close_button {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #000;
+  position: absolute;
+  top: 20px; 
+  right: 15px; 
+  font-size: 10px;  
+  background-color: #f44336;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6; 
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  input,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+}
